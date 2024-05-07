@@ -1,5 +1,5 @@
 process pod5_channel {
-    label "pod5"
+    label "pod5_sm"
     
     input:
     path pod5
@@ -15,7 +15,7 @@ process pod5_channel {
 }
 
 process pod5_subset {
-    label "pod5"
+    label "pod5_b"
 
     input:
     path pod5
