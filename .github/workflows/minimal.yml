@@ -3,7 +3,7 @@ name: minimal test
 on:
   push:
     branches:
-      - main
+      - PWG-1-drac
   pull_request:
   release:
     types: [published]
