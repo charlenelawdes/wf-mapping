@@ -15,7 +15,7 @@ process basecall {
     def dev = params.dorado_cpu ? '-x "cpu"' : ""
     def b = params.b ? "-b $params.b" : ""
     """
-    dorado duplex $b $dev $model $mod --mm2-preset --reference $ref --min-qscore 10 $pod5 > ${params.sample_id}.bam
+    dorado duplex $b $dev $model $mod --reference $ref --min-qscore 10 $pod5 > ${params.sample_id}.bam
     """
 }
 
